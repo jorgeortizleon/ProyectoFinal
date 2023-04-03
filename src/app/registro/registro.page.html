@@ -1,127 +1,129 @@
-
-
+<app-header titulo="Registro">
+  <ion-content padding>
+  </ion-content>
+</app-header>
 <ion-content class="bg-color-white">
-
+<ion-grid fixed>
   <ion-card class="ion-no-margin">
 
-      <ion-card-header>
-          <ion-card-title>
-            Crear cuenta
-          </ion-card-title>
-          <ion-card-subtitle>
-            Crea tu cuenta llenando
- el siguiente formulario
-            </ion-card-subtitle>
-      </ion-card-header>
-           <form>
-     <ion-card-content>
-         <ion-item>
-             <ion-input name="names" type="text" placeholder="Nombre" >
-               <ion-icon name="person-outline"  ></ion-icon>
-             </ion-input>
-         </ion-item>
-         <ion-item>
-          <ion-input name="names" type="text" placeholder="Apelido patermo" >
-            <ion-icon name="person-outline"  ></ion-icon>
-          </ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-input name="names" type="text" placeholder="Apellido materno" >
-          <ion-icon name="person-outline"  ></ion-icon>
-        </ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input name="names" type="text" placeholder="Domicilio" >
-        <ion-icon name="location"  ></ion-icon>
-      </ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-input name="names" type="text" placeholder="Colonia" >
-      <ion-icon name="location"  ></ion-icon>
-    </ion-input>
-</ion-item>
-<ion-item>
-  <ion-input name="names" type="text" placeholder="Poblacion" >
-    <ion-icon name="location"  ></ion-icon>
-  </ion-input>
-</ion-item>
-<ion-item>
-  <ion-input name="names" type="text" placeholder="Codigo postal" >
-    <ion-icon name="location"  ></ion-icon>
-  </ion-input>
-</ion-item>
+    <ion-card-header>
+      <ion-card-title>
+        Crear cuenta
+      </ion-card-title>
+      <ion-card-subtitle>
+        Crea tu cuenta llenando
+        el siguiente formulario
+      </ion-card-subtitle>
+    </ion-card-header>
 
-            <!-- <div>
+    <form [formGroup]="onRegisterForm" (ngSubmit)="onSubmit()">
+      <ion-card-content>
+        <ion-item>
+          <ion-input formControlName="name" type="text" placeholder="Nombre">
+            <ion-icon name="person-outline"></ion-icon>
+          </ion-input>
+        </ion-item>
+
+        <!-- <ion-item>
+          <ion-input formControlName="lastname" type="text" placeholder="Apelido patermo">
+            <ion-icon name="person-outline"></ion-icon>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input formControlName="lastname2" type="text" placeholder="Apellido materno">
+            <ion-icon name="person-outline"></ion-icon>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input formControlName="domicilio" type="text" placeholder="Domicilio">
+            <ion-icon name="location"></ion-icon>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input formControlName="colonia" type="text" placeholder="Colonia">
+            <ion-icon name="location"></ion-icon>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input formControlName="poblacion" type="text" placeholder="Poblacion">
+            <ion-icon name="location"></ion-icon>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input formControlName="codigoPostal" type="text" placeholder="Codigo postal">
+            <ion-icon name="location"></ion-icon>
+          </ion-input>
+        </ion-item>
+
+         <div>
               <ng-container>
                 <div class="error_message">
                 </div>
               </ng-container>
-            </div> -->
-         <ion-item>
-             <ion-input name="phone" type="text" placeholder="Numero telefonico" >
-               <ion-icon name="call-outline" ></ion-icon>
-             </ion-input>
-         </ion-item>
-         <ion-item>
-          <ion-input name="names" type="text" placeholder="Ocupacion" >
-            <ion-icon name="person-outline"  ></ion-icon>
+            </div> 
+
+        <ion-item>
+          <ion-input formControlName="telefono" type="text" placeholder="Numero telefonico">
+            <ion-icon name="call-outline"></ion-icon>
           </ion-input>
-      </ion-item>
-         <!-- <div>
+        </ion-item>
+        <ion-item>
+          <ion-input formControlName="ocupacion" type="text" placeholder="Ocupacion">
+            <ion-icon name="person-outline"></ion-icon>
+          </ion-input>
+        </ion-item>
+
+        <div>
            <ng-container>
-
              <div class="error_message" >
-                
              </div>
-
             </ng-container>
+         </div> 
 
-         </div> -->
-         <ion-item>
-          <ion-input name="names" type="text" placeholder="Edad" >
-            <ion-icon name="person-outline"  ></ion-icon>
+        <ion-item>
+          <ion-input formControlName="edad" type="text" placeholder="Edad">
+            <ion-icon name="person-outline"></ion-icon>
           </ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-input name="names" type="text" placeholder="Sexo" >
-          <ion-icon name="person-outline"  ></ion-icon>
-        </ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-input name="names" type="text" placeholder="Referido" >
-        <ion-icon name="person-outline"  ></ion-icon>
-      </ion-input>
-  </ion-item>
-         <ion-item>
-             <ion-input name="email" type="text" placeholder="Email" >
-               <ion-icon name="mail-outline" ></ion-icon>
-             </ion-input>
-         </ion-item>
-         <!-- <ng-container >
+        </ion-item>
+        <ion-item>
+          <ion-input formControlName="sexo" type="text" placeholder="Sexo">
+            <ion-icon name="person-outline"></ion-icon>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input formControlName="referido" type="text" placeholder="Referido">
+            <ion-icon name="person-outline"></ion-icon>
+          </ion-input>
+        </ion-item> -->
 
+
+        <ion-item>
+          <ion-input formControlName="email" type="text" placeholder="Email">
+            <ion-icon name="mail-outline"></ion-icon>
+          </ion-input>
+        </ion-item>
+
+        <!-- <ng-container >
            <div class="error_message" >
-               
            </div>
-
-          </ng-container> -->
-         <ion-item>
-             <ion-input name="password" type="password" placeholder="Contraseña" >
-               <ion-icon name="lock-closed" ></ion-icon>
-             </ion-input>
-         </ion-item>
-         <!-- <ng-container >
-
-           <div class="error_message" >
-              
-           </div>
-
           </ng-container> -->
 
-         <div class="sign-btn-wrap">
-            <ion-button  shape="round" type="submit"  fill="solid" class="sign-btn" >Crear cuenta</ion-button>
+        <ion-item>
+          <ion-input formControlName="password" type="password" placeholder="Contraseña">
+            <ion-icon name="lock-closed"></ion-icon>
+          </ion-input>
+        </ion-item>
+        
+        <!-- <ng-container >
+           <div class="error_message" >
            </div>
+          </ng-container> -->
 
-           <!-- <div class="text-tag">
+        <div class="sign-btn-wrap">
+          <ion-button (click)="doSave()" shape="round" type="submit" fill="solid" class="sign-btn">Crear cuenta</ion-button>
+        </div>
+
+        <!-- <div class="text-tag">
            <span>Sign Up with</span>
            </div>
            <div class="social-btns">
@@ -136,8 +138,9 @@
                </ion-button>
              </div> -->
 
-     </ion-card-content>
-      </form>
+      </ion-card-content>
+    </form>
   </ion-card>
-
+</ion-grid>
 </ion-content>
+<app-footer></app-footer>

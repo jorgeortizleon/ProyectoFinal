@@ -1,62 +1,70 @@
-<app-header titulo="Login">
-  <ion-content padding>
-  </ion-content>
-</app-header>
-<div class="container-fluid ps-md-0">
-  <div class="row g-0">
-    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
-    <div class="col-md-8 col-lg-6">
-      <div class="login d-flex align-items-center py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 col-lg-8 mx-auto">
+<ion-content class="bg-color-white">
 
-              <h3 class="login-heading mb-4">Bienvenido</h3>
+  <app-header titulo="Login">
+    <ion-content padding>
+    </ion-content>
+  </app-header>
 
-              <!-- Sign In Form -->
-              <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"  id="inputEmail4">
-                  <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-                    <div *ngIf="f.email.errors.required">Correo requerido</div>
-                    <div *ngIf="f.email.errors.email">El correo debe de ser valido</div>
-                 </div>
-                  <label for="floatingInput">Correo</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password" formControlName="password"[ngClass]="{ 'is-invalid': submitted && f.password.errors }" id="inputPassword4">
-                  <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
-                    <div *ngIf="f.password.errors.required">Constraseña requerida</div>
-                 </div>
-                  <label for="floatingPassword">Constraseña</label>
-                </div>
+  <div class="container-fluid ps-md-0">
+    <div class="row g-0">
+      <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+      <div class="col-md-8 col-lg-6">
+        <div class="login d-flex align-items-center py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 col-lg-8 mx-auto">
 
-                <!-- <div class="form-check mb-3">
+                <h3 class="login-heading mb-4 ">Bienvenido</h3>
+
+                <!-- Sign In Form -->
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                      formControlName="email" class="form-control"
+                      [ngClass]="{ 'is-invalid': submitted && f.email.errors }" id="inputEmail4">
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                      <div *ngIf="f.email.errors.required">Correo requerido</div>
+                      <div *ngIf="f.email.errors.email">El correo debe de ser valido</div>
+                    </div>
+                    <label for="floatingInput">Correo</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                      formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+                      id="inputPassword4">
+                    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                      <div *ngIf="f.password.errors.required">Constraseña requerida</div>
+                    </div>
+                    <label for="floatingPassword">Constraseña</label>
+                  </div>
+
+                  <!-- <div class="form-check mb-3">
                   <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
                   <label class="form-check-label" for="rememberPasswordCheck">
                     Recordar constraseña
                   </label>
                 </div> -->
 
-                <div class="d-grid">
-                  <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">
-                    Iniciar sesion</button>
-                  <div class="d-flex justify-content-between">
-                    <a class="small text-end" (click)="gotoForgotPassword()" >Olvide mi constraseña</a>
-                    <a class="small text-left" (click)="gotoRegistro()" >Crear cuenta</a>
+                  <div class="d-grid">
+                    <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">
+                      Iniciar sesion</button>
+                    <div class="d-flex justify-content-between">
+                      <a class="small text-end" (click)="gotoForgotPassword()">Olvide mi constraseña</a>
+                      <a class="small text-left" (click)="gotoRegistro()">Crear cuenta</a>
+                    </div>
                   </div>
-                </div>
 
-              </form>
-              
+                </form>
+
+              </div>
+
             </div>
-            
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="d-flex justify-content-between">
- <h1>holo</h1>
-</div>
+
+  <app-footer></app-footer>
+
+</ion-content>

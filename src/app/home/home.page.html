@@ -1,20 +1,174 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header titulo="Home">
+  <ion-content padding>
+  </ion-content>
+</app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank Attm Axelo</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="bg-color-white">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <!-- First section: full-screen image with centered title -->
+  <div class="full-screen-image">
+    <img src="https://images.unsplash.com/photo-1539036776273-021ec1d78bec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80">
+    <div class="centered-title">
+      <h1>Optica</h1>
+    </div>
   </div>
+
+  <!-- Second section: three cards with icons and text -->
+  <div class="card-container">
+    <ion-card>
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="https://cdn-icons-png.flaticon.com/128/6437/6437530.png">
+        </ion-avatar>
+        <ion-card-header>
+          <ion-card-title class="ion-text-center">Profesionales capacitados</ion-card-title>
+        </ion-card-header>
+      </ion-item>
+      <ion-card-content>
+        Una buena óptica debe contar con profesionales altamente capacitados en el área de la salud visual, como optometristas, oftalmólogos y técnicos ópticos. Estos profesionales deben tener experiencia y conocimientos suficientes para ofrecer una atención personalizada y de calidad a cada paciente.
+      </ion-card-content>
+    </ion-card>
+
+     <ion-card>
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="https://cdn-icons-png.flaticon.com/128/6401/6401449.png">
+        </ion-avatar>
+        <ion-card-header>
+          <ion-card-title class="ion-text-center">Amplia variedad de productos</ion-card-title>
+        </ion-card-header>
+      </ion-item>
+      <ion-card-content>
+        Una buena óptica debe ofrecer una amplia variedad de productos de calidad, incluyendo gafas graduadas, lentes de contacto, gafas de sol y lentes deportivos, entre otros. Además, los productos deben ser de marcas reconocidas y de alta calidad para garantizar la satisfacción del cliente.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="https://cdn-icons-png.flaticon.com/128/9352/9352311.png">
+        </ion-avatar>
+        <ion-card-header>
+          <ion-card-title class="ion-text-center">Tecnología avanzada</ion-card-title>
+        </ion-card-header>
+      </ion-item>
+      <ion-card-content>
+        Es importante que una buena óptica cuente con tecnología avanzada y moderna para llevar a cabo exámenes de la vista precisos y confiables. Esto incluye equipos de medición de la visión, herramientas para diagnóstico de enfermedades oculares y sistemas de asesoramiento y seguimiento personalizado
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div class="card-container">
+    <ion-card>
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="https://cdn-icons-png.flaticon.com/128/9352/9352217.png">
+        </ion-avatar>
+        <ion-card-header>
+          <ion-card-title class="ion-text-center">Servicios personalizados</ion-card-title>
+        </ion-card-header>
+      </ion-item>
+      <ion-card-content>
+        Una buena óptica debe ofrecer servicios personalizados, adaptados a las necesidades específicas de cada cliente. Esto incluye exámenes de la vista detallados, evaluaciones de la salud ocular y recomendaciones personalizadas de productos y tratamientos.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="https://cdn-icons-png.flaticon.com/512/7291/7291540.png">
+        </ion-avatar>
+        <ion-card-header>
+          <ion-card-title class="ion-text-center">Atención al cliente</ion-card-title>
+        </ion-card-header>
+      </ion-item>
+      <ion-card-content>
+       Una buena óptica debe tener un enfoque centrado en el cliente, ofreciendo un servicio amable y profesional que genere una experiencia agradable y satisfactoria. La atención al cliente debe ser eficiente, respetuosa y con un alto nivel de empatía.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="https://cdn-icons-png.flaticon.com/128/4483/4483094.png">
+        </ion-avatar>
+        <ion-card-header>
+          <ion-card-title class="ion-text-center">Precios competitivos</ion-card-title>
+        </ion-card-header>
+      </ion-item>
+      <ion-card-content>
+        Finalmente, una buena óptica debe ofrecer precios competitivos y accesibles para sus productos y servicios. Esto implica una buena relación calidad-precio, permitiendo que cualquier persona pueda acceder a productos y servicios de calidad sin afectar su presupuesto.
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- Third section: blue background with title and extensive text -->
+ 
+    <ion-card class="full-screen-card">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">Por que ir a una optica?</ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="">
+        <p>Visitar una óptica es importante por varias razones:</p>
+      </ion-card-content>
+      <ion-card-content class="">
+        <p>1. Verificar la salud de tus ojos: Un examen ocular regular es fundamental para detectar problemas en los ojos antes de que se conviertan en algo más grave. Los optometristas y oftalmólogos están capacitados para detectar problemas de visión, como la miopía, la hipermetropía y el astigmatismo, así como para diagnosticar enfermedades oculares más graves, como el glaucoma y las cataratas.</p>
+      </ion-card-content>
+      <ion-card-content class="">
+        <p>2. Corregir problemas de visión: Si tienes problemas de visión, como la miopía, la hipermetropía o el astigmatismo, un profesional de la óptica puede recomendarte la corrección adecuada. Las gafas o lentes de contacto correctivos pueden ayudar a mejorar la calidad de tu visión y hacer que tus actividades diarias sean más fáciles y cómodas.</p>
+      </ion-card-content>
+      <ion-card-content class="">
+        <p>3. Actualización de las recetas de tus gafas o lentes de contacto: Si ya usas gafas o lentes de contacto, es importante actualizar regularmente tus recetas para garantizar que sigan siendo efectivos. La graduación de los ojos puede cambiar con el tiempo, lo que puede afectar la calidad de la visión y hacer que las gafas o lentes de contacto sean menos efectivos.</p>
+      </ion-card-content>
+      <ion-card-content class="">
+        <p>4. Obtener recomendaciones sobre la mejor manera de cuidar tus ojos: Un profesional de la óptica puede brindarte información sobre cómo mantener una buena salud ocular y prevenir problemas en el futuro. Te puede proporcionar recomendaciones sobre el uso de gafas o lentes de contacto, la exposición a la luz solar y la elección de alimentos que sean buenos para la salud ocular.</p>
+      </ion-card-content>
+      <ion-card-content class="">
+        <p>En general, visitar una óptica puede ayudarte a cuidar tus ojos y garantizar que tu visión sea clara y cómoda. Un profesional de la óptica puede ofrecerte recomendaciones personalizadas para mejorar tu salud ocular y garantizar que tengas una buena calidad de vida.</p>
+      </ion-card-content>
+      <ion-card-content class="">
+        <p>Además de los puntos mencionados anteriormente, también es importante destacar que una óptica puede ofrecerte una amplia variedad de productos y servicios para satisfacer tus necesidades visuales.</p>
+      </ion-card-content>
+      <ion-card-content class="">
+        <p>Por ejemplo, además de las gafas y lentes de contacto correctivos, una óptica también puede ofrecerte gafas de sol, lentes de protección para deportes y gafas de lectura. Además, algunos establecimientos también ofrecen servicios adicionales, como terapia visual y entrenamiento de los músculos oculares para mejorar la capacidad de enfoque y coordinación.</p>
+      </ion-card-content>
+      <ion-card-content class="">
+        <p>En resumen, una visita regular a una óptica puede ser beneficiosa para cualquier persona que desee cuidar sus ojos y mantener una buena calidad de vida. Un profesional de la óptica puede ofrecerte una amplia gama de productos y servicios para satisfacer tus necesidades visuales y proporcionarte recomendaciones personalizadas para mejorar tu salud ocular.</p>
+      </ion-card-content>
+      <ion-card-content class="">
+        <p></p>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="card-container">
+      <ion-card>
+        <ion-img src="https://images.unsplash.com/photo-1582895361887-24daa40c8667?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1241&q=80"></ion-img>
+      </ion-card>
+  
+      <ion-card>
+        <ion-img src="https://images.unsplash.com/photo-1517948430535-1e2469d314fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"></ion-img>
+      </ion-card>
+  
+      <ion-card>
+        <ion-img src="https://images.unsplash.com/photo-1615468822882-4828d2602857?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"></ion-img>
+      </ion-card>
+    </div>
+  
+    <div class="card-container">
+      <ion-card>
+        <ion-img src="https://images.unsplash.com/photo-1616163477138-508df4131a38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"></ion-img>
+      </ion-card>
+  
+      <ion-card>
+        <ion-img src="https://images.unsplash.com/photo-1608539733377-5557e02926b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"></ion-img>
+      </ion-card>
+  
+      <ion-card>
+        <ion-img src="https://images.unsplash.com/photo-1577410114274-ef015b5b6d29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"></ion-img>
+      </ion-card>
+    </div>
+  
+    <app-footer></app-footer>
+
 </ion-content>
+

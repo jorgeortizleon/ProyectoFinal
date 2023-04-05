@@ -3,12 +3,13 @@
 }
 
 .bg-image {
-  background-image: url('https://images.opencollective.com/material/b4c8faf/background.jpg');
+  background-image: url('https://images.unsplash.com/photo-1615468822882-4828d2602857?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
   background-size: cover;
   background-position: center;
 }
 
-.login-heading {
+.login-heading{
+  color:#272c32;
   font-weight: 300;
 }
 
@@ -16,4 +17,14 @@
   font-size: 0.9rem;
   letter-spacing: 0.05rem;
   padding: 0.75rem 1rem;
+}
+
+ion-content{
+  --ion-background-color:#ffffff !important;
+  --ion-item-background: transparent !important;
+}
+
+label{
+  color:#272c32;
+  font-weight: 300;
 }

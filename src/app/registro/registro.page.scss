@@ -4,7 +4,7 @@ ion-content{
 }
 
 .bg-color{
-  background: #E1EAF9;
+  background: #ffffff;
 }
 
 ion-header{
@@ -25,7 +25,7 @@ ion-card{
  ion-card-title{
    margin-top: 50px !important;
    font-size: 25px;
-   color: #53565A;
+   color: #000000;
    font-weight: 600;
    text-align: center;
 
@@ -35,7 +35,7 @@ ion-card{
    text-align: center;
    padding-top: 15px !important;
    font-size: 13px;
-   color: #888C91;
+   color: #252628;
    font-weight: 400;
    text-transform: none;
    padding: 0 30px;
@@ -56,7 +56,7 @@ ion-card-content{
    
    font-size: 13px;
    ion-input{
-     color:#74787E;
+     color:#191a1b;
      font-size: 13px;
      ion-icon{
        padding-right: 6px;
@@ -78,7 +78,7 @@ ion-card-content{
     padding-top: 45px;
    .sign-btn{
      --ion-primary-color:#215AB7;
-     --background:#215AB7;
+     --background:#0099ff;
      --background-activated:#E1EAF9;
      --background-focused:#E1EAF9;
      --background-hover:#647B9D;
